@@ -1,0 +1,429 @@
+{
+	"info": {
+		"_postman_id": "96bc6bfe-cae0-470d-ab87-77bbaffc87c8",
+		"name": "QuickRidePostManAPIs",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "25443597"
+	},
+	"item": [
+		{
+			"name": "createPassenger",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"passenger1\",\r\n    \"phoneNumber\" : \"1234p\",\r\n    \"gender\" : \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/passenger/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"passenger",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPassenger 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"passenger2\",\r\n    \"phoneNumber\" : \"12345p\",\r\n    \"gender\" : \"female\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/passenger/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"passenger",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "createPassenger 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"passenger3\",\r\n    \"phoneNumber\" : \"123456p\",\r\n    \"gender\" : \"male\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/passenger/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"passenger",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create driver",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"driver1\",\r\n    \"phoneNumber\" : \"1234d\",\r\n    \"gender\" : \"male\",\r\n    \"driverLicense\" : \"license1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/driver/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"driver",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add vehicle",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Car1\",\r\n    \"number\" : \"CA1\",\r\n    \"noOfSeats\" : \"4\",\r\n    \"driverId\" : \"1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/vehicle/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"vehicle",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ride",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": 1,\r\n  \"start\": \"New York\",\r\n  \"end\": \"Boston\",\r\n  \"startTime\": \"2024-11-18T09:00:00\",\r\n  \"endTime\": \"2024-11-18T12:00:00\",\r\n  \"amount\": 25.50,\r\n  \"availableSeatCount\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/propose-ride",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"propose-ride"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ride 2",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": 1,\r\n  \"start\": \"San Francisco\",\r\n  \"end\": \"Los Angeles\",\r\n  \"startTime\": \"2024-11-19T07:30:00\",\r\n  \"endTime\": \"2024-11-19T14:30:00\",\r\n  \"amount\": 45.75,\r\n  \"availableSeatCount\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/propose-ride",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"propose-ride"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ride 3",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": 1,\r\n  \"start\": \"Chicago\",\r\n  \"end\": \"Detroit\",\r\n  \"startTime\": \"2024-11-20T10:15:00\",\r\n  \"endTime\": \"2024-11-20T14:00:00\",\r\n  \"amount\": 30.00,\r\n  \"availableSeatCount\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/propose-ride",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"propose-ride"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ride 4",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": 1,\r\n  \"start\": \"Seattle\",\r\n  \"end\": \"Portland\",\r\n  \"startTime\": \"2024-11-21T08:00:00\",\r\n  \"endTime\": \"2024-11-21T11:00:00\",\r\n  \"amount\": 20.00,\r\n  \"availableSeatCount\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/propose-ride",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"propose-ride"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "create ride 5",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"vehicleId\": 1,\r\n  \"start\": \"Miami\",\r\n  \"end\": \"Orlando\",\r\n  \"startTime\": \"2024-11-22T06:45:00\",\r\n  \"endTime\": \"2024-11-22T09:30:00\",\r\n  \"amount\": 35.20,\r\n  \"availableSeatCount\": 4\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/propose-ride",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"propose-ride"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show ride",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/ride/Detroit/Chicago",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"ride",
+						"Detroit",
+						"Chicago"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add passenger",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"passengerId\" : \"3\",\r\n    \"ridesId\" : [2,4,5]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/add-passenger",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"add-passenger"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show ride Copy",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/ride/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"ride",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "get all Journeys for a passenger",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/rides/ride/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"rides",
+						"ride",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
